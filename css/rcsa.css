@@ -1,0 +1,129 @@
+
+#sidebar-first .block-menu .content li:Not(.expanded){
+    display: none;
+}
+#sidebar-first .block-menu .content .expanded li{
+    display: list-item;
+}
+/*.block-menu .content>ul>li.active-trail{
+    display: list-item;
+    list-style-image: url(../../../../../misc/menu-expanded.png);
+    list-style-type: circle;
+}*/
+#sidebar-first .block-menu h2{
+    display: none;
+}
+
+#main-menu-links a {
+    background: none;
+    text-shadow: none;
+    padding: 0 0.6em;
+    -khtml-border-radius-topleft: 0;
+    -khtml-border-radius-topright: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-bottom: 10px;
+    padding-top: 7px;
+}
+
+#main-menu-links a:hover,
+#main-menu-links a:focus {
+    background: #FDC107;
+}
+#main-menu-links a:active {
+    background: #FDC107;
+}
+#main-menu-links li a.active, #main-menu-links li a.active-trail {
+    background: #FDC107;
+}
+
+#header{
+    background-image: url(background.png);
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+}
+#logo{
+    padding-bottom: 0px;
+    padding-top: 13px;
+}
+.newsletter-list-item div, .view-sponsors div{
+    display: inline;
+}
+
+.node-article.node-teaser .field-name-field-image img,
+.node-committee-member .field-name-field-picture img{ 
+    float:right; 
+    margin: 0 0 15px 15px; 
+}
+.node-teaser.node-committee-member .field-name-field-picture img{
+    margin: -30px 0 15px 15px; 
+}
+.node-committee-member.node-teaser,.node-open-meeting.node-teaser{
+    border: none;
+    margin-bottom: 10px;
+}
+.node-open-meeting.node-teaser{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.node-teaser h2 a.open-meeting-edit-link{
+    font-size: 0.6em;
+    color: #0071B3;
+}
+
+.view-sponsors{
+    text-align: center;
+}
+.view-sponsors .views-row{
+    margin:0px 50px;
+}
+
+.node-open-meeting.node-teaser .field-name-field-files .field-item{
+    display: inline;
+}
+
+
+
+/* <Keeep Footer At Bottom of Page> */
+
+html, body, #page-wrapper{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#page{
+    min-height: 100%;
+    position:relative;
+    height: auto;
+}
+#main-wrapper
+{
+    padding: 10px;
+    padding-bottom: 170px; /* Height of the footer */
+}
+/* Reset min-height content display height clear visibility*/
+#footer-wrapper
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 170px; /* Height of the footer */
+    padding: 0;/* return to default value */
+}
+
+
+#page-wrapper{
+    background: white;
+}
+#footer-wrapper .block{
+    margin:0;
+    border: none;
+    padding: 0;
+}
+
+/* </Keeep Footer At Bottom of Page> */

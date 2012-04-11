@@ -1,0 +1,29 @@
+name = RCSA Theme
+description = A theme written for The RCSA Website.
+core = 7.x
+
+base theme = bartik
+
+stylesheets[all][] = css/rcsa.css
+stylesheets[print][] = css/print.css
+
+; CORE REGIONS - DISABLED
+
+; CORE REGIONS - REQUIRED
+
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
+
+; CORE REGIONS - ENABLED
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+
+; CUSTOM REGIONS
+
+regions[featured] = Featured

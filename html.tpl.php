@@ -52,8 +52,5 @@
         <?php print $page_top; ?>
         <?php print $page; ?>
         <?php print $page_bottom; ?>
-        <script>
-            if(document.getElementById("toolbar"))document.getElementById("secondary-menu").innerHTML = "";
-        </script>
     </body>
 </html>

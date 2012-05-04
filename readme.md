@@ -4,6 +4,14 @@ The rcsa theme provides the theming for the rcsa website.  It is based off Barti
 
 **Note that lots of stuff is defined in the css so read this if your confused about something which isn't showing up/behaves unexpectedly**
 
+## Page
+
+The only behavioural modification to take real note of here is the way that the menus behave.  Some fairly complex CSS rules are used to hide the bulk of the menu tree when not in use for the left side bar, and the user menu doesn't display for the admin user as it would then contain everybody's links (too many to fit in the space).
+
+The code responsible for hiding the user menu is on line 152 of page.tpl.php:
+
+    !user_access('edit any committee_member content')
+
 ## Newsletter
 
 Our college newsletter (The Brick) is displayed as a list of links directly to PDFs using the following files to modify its display.

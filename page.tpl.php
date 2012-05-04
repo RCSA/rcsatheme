@@ -149,7 +149,7 @@
                     </div> <!-- /#main-menu -->
                 <?php endif; ?>
 
-                <?php if ($secondary_menu): ?>
+                <?php if ($secondary_menu && !user_access('edit any committee_member content')): ?>
                     <div id="secondary-menu" class="navigation">
                         <?php
                         print theme('links__system_secondary_menu', array(

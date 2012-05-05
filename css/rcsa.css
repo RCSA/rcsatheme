@@ -86,6 +86,17 @@
     display: inline;
 }
 
+h2{
+    border-bottom-style: double;
+    border-color:#3B3B3B;
+}
+.views-row h2{
+    border: none;
+}
+hr{
+    border-color:#3B3B3B;
+}
+
 
 
 /* <Keeep Footer At Bottom of Page> */

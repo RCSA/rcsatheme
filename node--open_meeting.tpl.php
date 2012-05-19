@@ -81,7 +81,7 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <?php if (!$page): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" class="om-long-title"><?php print $title; ?></a><span class="om-short-title"><?php print render($content["field_openmeetingdate"]);hide($content["field_openmeetingdate"]); ?></span>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><span  class="om-long-title"><?php print $title; ?></span><span class="om-short-title"><?php print render($content["field_openmeetingdate"]); ?></span></a>
             <?php
             if (node_access('update', $node)):
                 print l('edit', 'node/' . $nid . '/edit', array(
@@ -103,6 +103,7 @@
     <div class="content"<?php print $content_attributes; ?>>
         <?php
         // We hide the comments and links now so that we can render them later.
+        hide($content["field_openmeetingdate"]);
         hide($content['comments']);
         hide($content['links']);
         print render($content);

@@ -80,9 +80,8 @@
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-    <?php print $user_picture; ?>
     <?php if (!$page): ?>
-        <h2<?php print $title_attributes; ?>><?php print $title; ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" class="om-long-title"><?php print $title; ?></a><span class="om-short-title"><?php print render($content["field_openmeetingdate"]);hide($content["field_openmeetingdate"]); ?></span>
             <?php
             if (node_access('update', $node)):
                 print l('edit', 'node/' . $nid . '/edit', array(

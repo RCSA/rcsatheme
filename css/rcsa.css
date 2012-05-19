@@ -97,7 +97,15 @@ hr{
     border-color:#3B3B3B;
 }
 
-
+.view-open-meetings .om-long-title{
+    display:none;
+}
+.view-frontpage .om-short-title{
+    display:none;
+}
+.node-open-meeting h2 div{
+    display:inline;
+}
 
 /* <Keeep Footer At Bottom of Page> */
 

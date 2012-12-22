@@ -78,9 +78,7 @@
  */
 ?>
 
-    <a href="<?php print render($content['field_homepage']); ?>">
-        <img src="<?php print render($content['field_logo']); ?>"/>
-    </a>
+    <a style="text-decoration: none" href="<?php print render($content['field_homepage']); ?>"><img src="<?php print render($content['field_logo']); ?>"/></a>
     <?php
     if (!$page && node_access('update', $node)):
         print l('edit', 'node/' . $nid . '/edit', array('query' => drupal_get_destination()));
